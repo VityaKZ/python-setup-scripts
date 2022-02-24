@@ -1,7 +1,6 @@
 #!/bin/bash
-# TODO BW: Update this
 # To execute this from a command prompt:
-# curl https://gist.githubusercontent.com/BrandonLWhite/41b2a16487eef8abd193d9481dfd37f3/raw | bash
+# curl https://raw.githubusercontent.com/upside-services/python-setup-scripts/master/install_pyenv.sh | bash
 
 # Set bash as the default shell.
 chsh -s /bin/bash
