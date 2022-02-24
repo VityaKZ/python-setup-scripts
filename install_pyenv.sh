@@ -27,4 +27,7 @@ pyenv install 3.9:latest
 
 # Set the default version to 3.6
 # This lets 3.6 be ambient for projects that don't yet have .python-version.
-pyenv global 3.6
+# So by default `python` will map to 3.6.
+# Other versions are added to support tox which invokes python using major and minor, lik `python3.7`
+# Without declaring these `global` pyenv will error with `pyenv: foo: command not found`
+pyenv global 3.6 3.7 3.8 3.9
