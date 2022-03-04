@@ -41,9 +41,16 @@ git clone https://github.com/upside-services/pyenv-alias-latest-patch-version.gi
 
 # Install all the versions we want
 pyenv install 3.6:latest
+PYENV_VERSION=3.6 python -m pip install --upgrade pip
+
 pyenv install 3.7:latest
+PYENV_VERSION=3.7 python -m pip install --upgrade pip
+
 pyenv install 3.8:latest
+PYENV_VERSION=3.8 python -m pip install --upgrade pip
+
 pyenv install 3.9:latest
+PYENV_VERSION=3.9 python -m pip install --upgrade pip
 
 # Set the default version to 3.6
 # This lets 3.6 be ambient for projects that don't yet have .python-version.
