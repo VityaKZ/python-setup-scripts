@@ -40,21 +40,4 @@ source $LOGIN_SHELL_PROFILE
 git clone https://github.com/upside-services/pyenv-alias-latest-patch-version.git $(pyenv root)/plugins/pyenv-alias-latest-patch-version
 
 # Install all the versions we want
-pyenv install 3.6:latest
-PYENV_VERSION=3.6 python -m pip install --upgrade pip
-
-pyenv install 3.7:latest
-PYENV_VERSION=3.7 python -m pip install --upgrade pip
-
-pyenv install 3.8:latest
-PYENV_VERSION=3.8 python -m pip install --upgrade pip
-
-pyenv install 3.9:latest
-PYENV_VERSION=3.9 python -m pip install --upgrade pip
-
-# Set the default version to 3.6
-# This lets 3.6 be ambient for projects that don't yet have .python-version.
-# So by default `python` will map to 3.6.
-# Other versions are added to support tox which invokes python using major and minor, like `python3.7`
-# Without declaring these `global` pyenv will error with `pyenv: foo: command not found`
-pyenv global 3.6 3.7 3.8 3.9
+curl https://raw.githubusercontent.com/upside-services/python-setup-scripts/master/install_python_versions.sh | bash
