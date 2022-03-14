@@ -1,6 +1,6 @@
 #!/bin/bash
 # To execute this from a command prompt:
-# curl https://raw.githubusercontent.com/upside-services/python-setup-scripts/master/install_pyenv.sh | bash
+# curl https://raw.githubusercontent.com/upside-services/python-setup-scripts/master/install_python_versions.sh | bash
 #
 # Prerequisites: Pyenv is installed with the pyenv-alias-latest-patch-version plugin.  See
 # https://raw.githubusercontent.com/upside-services/python-setup-scripts/master/install_pyenv.sh
