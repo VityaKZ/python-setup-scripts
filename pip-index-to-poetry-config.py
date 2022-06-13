@@ -17,7 +17,7 @@ import sys
 from urllib.parse import urlparse, urlunparse
 
 poetry_repository_name = sys.argv[1]
-pip_index = os.environ.get('PIP_INDEX')
+pip_index = os.environ.get('PIP_INDEX', os.environ.get('PIP_INDEX_URL'))
 
 pip_index_parsed = urlparse(pip_index)
 poetry_repository_url = urlunparse(pip_index_parsed._replace(netloc=pip_index_parsed.hostname))
